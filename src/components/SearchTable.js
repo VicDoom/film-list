@@ -3,16 +3,12 @@ import {useEffect, useState} from "react";
 import {List} from "./List";
 
 export function SearchTable() {
-    let [value, setValue] = useState(null)
-
-    useEffect(() => {
-        console.log("Был изменен Input")
-    })
+    let [value, setValue] = useState('')
 
     return (
-        <div className="main">
-            <Input updateValue={setValue}/>
-            <List value={value}/>
-        </div>
+            <div className="form">
+                <Input updateValue={setValue}/>
+                <List value={value}/>
+            </div>
     )
 }

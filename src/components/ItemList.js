@@ -6,8 +6,11 @@ export function ItemList(props) {
             () => {console.log(`Unmounted ${props.name}`)}
         )
     })
+    useEffect(() => {
+        console.log(`Mounted ${props.name}`)
+    })
     return (
-        <div style={{display: "flex", gap: 20}}>
+        <div className="form__list-item">
             <div className="ItemName">{props.name}</div>
             <div className="ItemAge">{props.year}</div>
         </div>

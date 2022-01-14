@@ -4,7 +4,9 @@ import {SearchTable} from "./components/SearchTable";
 
 function App() {
   return (
-    <SearchTable />
+      <div className="main">
+        <SearchTable />
+      </div>
   );
 }
 
